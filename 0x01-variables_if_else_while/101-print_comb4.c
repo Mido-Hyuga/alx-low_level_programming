@@ -9,8 +9,7 @@
 
 int main(void)
 {
-
-	int ch, ch1, ch2;
+	int ch, ch2, ch2;
 
 	for (ch = '0'; ch <= '7'; ch++)
 	{
@@ -22,9 +21,9 @@ int main(void)
 				putchar(ch1);
 				putchar(ch2);
 				if (ch == '7' && ch1 == '8' && ch2 == '9')
-					{
-						break;
-					}
+				{
+					break;
+				}
 				putchar(',');
 				putchar(' ');
 			}
