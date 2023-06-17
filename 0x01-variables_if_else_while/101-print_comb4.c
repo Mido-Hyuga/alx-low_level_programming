@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int ch, ch2, ch2;
+	int ch, ch1, ch2;
 
 	for (ch = '0'; ch <= '7'; ch++)
 	{
