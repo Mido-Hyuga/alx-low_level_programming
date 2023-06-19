@@ -23,7 +23,7 @@ for (i = '0'; i <= '9'; i++)
 					putchar(j);
 					putchar(' ');
 					putchar(k);
-					putchar(x)
+					putchar(x);
 					if (i == '9' && j == '8' && k == '9' && x == '9')
 						break;
 						putchar(',');
