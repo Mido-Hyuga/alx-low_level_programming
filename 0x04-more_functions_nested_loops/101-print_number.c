@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
-* print_number - print numbers.
-* @n: the number.
+* print_number - Print a number
+* @n: The number to print
+*Return: always 0
 */
 
 void print_number(int n)
 {
-	int num = n;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
@@ -18,5 +19,6 @@ void print_number(int n)
 	{
 		print_number(num / 10);
 	}
-	_putchar(num % 10 + '0');
+		_putchar(num % 10 + '0');
 }
+
