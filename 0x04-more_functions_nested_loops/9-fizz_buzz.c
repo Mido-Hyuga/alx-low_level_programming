@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
 * main - Fizz-Buzz
-* Return : 0
+*
+*
+* Return: return 0
 */
 int main(void)
 {
