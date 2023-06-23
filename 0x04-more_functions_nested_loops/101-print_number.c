@@ -1,19 +1,22 @@
 #include "main.h"
+
 /**
-* print_number - Print number
-* @n: integer
-* Return: Nothing
+* print_number - print numbers.
+* @n: the number.
 */
+
 void print_number(int n)
 {
-	int i = n;
+	int num = n;
 
 	if (n < 0)
 	{
-		i = -i;
 		_putchar('-');
+		num = -num;
 	}
-	if (i > 9)
-		print_number(i / 10);
-	_putchar(i % 10 + '0');
+	if (num > 9)
+	{
+		print_number(num / 10);
+	}
+	_putchar(num % 10 + '0');
 }
