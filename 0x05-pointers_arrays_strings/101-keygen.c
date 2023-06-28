@@ -1,34 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
-*main - generates a random password
-*Return: the generated password
+*main - generate random password
+*
+*Return: always 0
 */
-int main() {
-    char password[15];
-    int i;
-    const char symbols[] = ",.\"'[]{}()!@#$%^&*";
 
-    srand(time(NULL));
+int main (void)
+{
+char c;
+int x;
 
-    for (i = 0; i < 15; i++) {
-        int type = rand() % 4;
-        if (type == 0) {
-            password[i] = 'A' + rand() % 26;
-        } else if (type == 1) {
-            password[i] = 'a' + rand() % 26;
-        } else if (type == 2){
-            password[i] = '0' + rand() % 10;
-        }
-        else {
-             password[i] = symbols[rand() % (sizeof(symbols) - 1)];
-        }
-    }
-
-    password[15] = '\0';
-
-    printf("%s\n", password);
-
-    return 0;
+srand(time(0));
+while (x <= 2645)
+{
+c = rand() % 128;
+x += c;
+putchar(c);
+}
+putchar(2772 - x);
+return (0);
 }
