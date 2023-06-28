@@ -15,11 +15,11 @@ int main() {
     for (i = 0; i < 12; i++) {
         int type = rand() % 4;
         if (type == 0) {
-            password[i] = 'A' + rand() % 26; // Uppercase letter
+            password[i] = 'A' + rand() % 26;
         } else if (type == 1) {
-            password[i] = 'a' + rand() % 26; // Lowercase letter
+            password[i] = 'a' + rand() % 26;
         } else if (type == 2){
-            password[i] = '0' + rand() % 10; // Digit
+            password[i] = '0' + rand() % 10;
         }
         else {
              password[i] = symbols[rand() % (sizeof(symbols) - 1)];
