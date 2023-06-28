@@ -6,13 +6,13 @@
 *Return: the generated password
 */
 int main() {
-    char password[12];
+    char password[15];
     int i;
     const char symbols[] = ",.\"'[]{}()!@#$%^&*";
 
     srand(time(NULL));
 
-    for (i = 0; i < 12; i++) {
+    for (i = 0; i < 15; i++) {
         int type = rand() % 4;
         if (type == 0) {
             password[i] = 'A' + rand() % 26;
@@ -26,7 +26,7 @@ int main() {
         }
     }
 
-    password[12] = '\0';
+    password[15] = '\0';
 
     printf("%s\n", password);
 
