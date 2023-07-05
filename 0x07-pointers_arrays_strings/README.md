@@ -20,3 +20,5 @@ In this section, we will explore advanced concepts related to pointers, arrays, 
    - Understanding the functionality and usage of each function.
 
 Feel free to explore these topics in detail to enhance your understanding of pointers, arrays, and strings in C programming.
+
+# Hyuga Boss
