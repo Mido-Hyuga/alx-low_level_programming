@@ -8,23 +8,23 @@
 
 int _sqrt_recursion(int n)
 {
-	return (_square(0, n));
+	return (multiple(0, n));
 }
 
 /**
 * _square - calculate the natural square root of a number
-* @num: number to be tested
-* @y: number to be squared
+* @i: number to be tested
+* @j: number to be squared
 * Return: square root
 */
 
-int _square(int num, int y)
+int multiple(int i, int j);
 {
-	if (y == 0 || y == 1)
-		return (y);
-	else if (num > y / 2)
+	if (j == 0 || j == 1)
+		return (i);
+	else if (i > j / 2)
 		return (-1);
-	else if (num * num == y)
-		return (num);
-	return (_square(num + 1, y));
+	else if (i * i == j)
+		return (i);
+	return (multiple(i + 1, j));
 }
