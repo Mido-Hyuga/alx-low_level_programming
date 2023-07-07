@@ -2,11 +2,12 @@
 #include <ctype.h>
 #include <stdlib.h>
 /**
-* main - prints the multiple of two numbers followed by a new line.
-* @argc : number of arguments.
-* @argv : array of arguments.
-* Return : return 0 or 1.
+* main - adds positive numbers followed by a new line.
+* @argc: number of arguments.
+* @argv: array of arguments.
+* Return: return 0 or 1.
 */
+
 int main(int argc, char *argv[])
 {
 	int i = 1, j, sum = 0;
@@ -15,7 +16,7 @@ int main(int argc, char *argv[])
 	{
 		while (i < argc)
 		{
-			for (j = 0; argv[i][j] != '\0'; j++)
+			for (j = 0; argv[i][j] != 0; j++)
 			{
 				if (!isdigit(argv[i][j]))
 				{
