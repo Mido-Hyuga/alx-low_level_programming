@@ -9,10 +9,8 @@
 */
 int main(int argc, char *argv[])
 {
-	int cents, ncoins = 0;
-	int coins[] = {25, 10, 5, 2, 1};
-	int numCoins = sizeof(coins) / sizeof(coins[0]);
-	int i;
+	int cents, ncoins = 0, i;
+	int coins[] = {25, 10, 5, 2, 1}, numCoins = sizeof(coins) / sizeof(coins[0]);
 
 	if (argc != 2)
 	{
@@ -31,4 +29,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", ncoins);
 	return (0);
 }
-
