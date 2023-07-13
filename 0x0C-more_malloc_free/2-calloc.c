@@ -5,7 +5,7 @@
 /**
 * _calloc - function that concatenates two strings..
 * @nmemb: number of members.
-* @size: size of one memebers.
+* @size: size of one members.
 * Return: return pointer or 0.
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
