@@ -21,14 +21,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d);
 		return (0);
 	}
+
 	while (*(name + i) != 0)
-	{
 		i++;
-	}
 	while (*(owner + j) != 0)
-	{
 		j++;
-	}
 
 	d->name = malloc(i + 1);
 	d->owner = malloc(j + 1);
