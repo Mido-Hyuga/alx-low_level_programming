@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 /**
- * main -  program that prints the opcodes of its own main function.
- * @argc: the size of argv.
- * @argv: number of bytes.
- * Return: always 0;
- */
+* main -  program that prints the opcodes of its own main function.
+* @argc: the size of argv.
+* @argv: byte numbers.
+* Return: 0.
+*/
 
 int main(int argc, char *argv[])
 {
 	int (*f)(int, char **) = main;
-	int i, num;
+	int i = 0, nmb;
 	unsigned char x;
 
 	if (argc != 2)
@@ -19,19 +19,20 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-	num = atoi(argv[1]);
-	if (num < 0)
+	nmb = atoi(argv[1]);
+	if (nmb < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < num; i++)
+	while (i < nmb)
 	{
 		x = *((unsigned char *)f + i);
 		printf("%.2x", x);
-		if (i == num - 1)
+		if (i == nmb - 1)
 			continue;
 		printf(" ");
+	i++;
 	}
 	printf("\n");
 	return (0);
