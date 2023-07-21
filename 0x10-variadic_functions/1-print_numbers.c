@@ -4,7 +4,7 @@
 /**
 * print_numbers - function that prints numbers, followed by a new line.
 * @separator: String Pointer.
-* @n: Number of element.
+* @n: Number of elements.
 */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
