@@ -16,14 +16,12 @@ void copy_file(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-
 	opn_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	if (opn_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-
 	while ((nchars = read(opn_from, buff, 1024)) > 0)
 	{
 		nwr = write(opn_to, buff, nchars);
@@ -33,19 +31,16 @@ void copy_file(const char *file_from, const char *file_to)
 			exit(99);
 		}
 	}
-
 	if (nchars == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-
 	if (close(opn_from) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", opn_from);
 		exit(100);
 	}
-
 	if (close(opn_to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", opn_to);
