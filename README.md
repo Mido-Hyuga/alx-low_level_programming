@@ -31,7 +31,7 @@ The projects in this repository follow a consistent structure:
 project-name/
 ├── README.md
 ├── source-code-files.c
-└── ...
+└── ....
 ```
 
 Each project directory contains a `README.md` file with detailed project instructions, requirements, and sometimes additional resources or references. The `source-code-files.c` file(s) contain the actual code implementation for the project.
